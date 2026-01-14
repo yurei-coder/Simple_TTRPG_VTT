@@ -404,8 +404,8 @@ $presetImages = [
         const ctx = canvas.getContext('2d');
         const w = <?php echo $v_bxWidth; ?>, h = <?php echo $v_bxHeight; ?>, cs = <?php echo $v_cellSize; ?>;
         canvas.width = w * cs; canvas.height = h * cs;
-        ctx.strokeStyle = "<?php echo $v_bxColor; ?>";
-        ctx.globalAlpha = <?php echo $v_bxOpacity; ?>;
+        ctx.strokeStyle = "<?php echo json_encode($v_bxColor); ?>";
+        ctx.globalAlpha = <?php echo json_encode($v_bxOpacity); ?>;
         ctx.lineWidth = 1;
         for (let x = 0; x <= w * cs; x += cs) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h * cs); ctx.stroke(); }
         for (let y = 0; y <= h * cs; y += cs) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w * cs, y); ctx.stroke(); }
@@ -480,3 +480,4 @@ $presetImages = [
 </body>
 
 </html>
+
