@@ -1,8 +1,4 @@
 <?php
-// =============================================================
-// VERSION 13.5: "NEW" BUTTON & EXAMPLE LINKS
-// =============================================================
-
 $languages = [
     'en' => [
         'new' => 'New', 'save' => 'Save', 'share' => 'Share', 'map' => 'Map Settings', 'tokens' => 'Tokens', 'exit' => 'Exit',
@@ -482,4 +478,5 @@ $presetImages = [
     }
 </script>
 </body>
+
 </html>
